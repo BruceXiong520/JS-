@@ -1,0 +1,55 @@
+<!doctype html>
+<!--  
+-->
+<html>
+	<head>
+		<title>这是我的第一个网页</title>
+		<meta charset="utf-8">
+		<meta name="keyword" content="关键词">
+		<style></style>
+		<script>
+			function sayHello(){
+				alert('大家好');
+			}
+		</script>
+	</head>
+	<body >
+		<form action="">
+			
+			<p>用户名称：<input type="text" name="uname" 
+			value="dangdang" disabled></p>
+			<p>用户密码：<input type="password" name="pwd" 
+			maxlength="12" placeholder="请输入密码"></p>
+			<p>用户性别：<input type="radio" name="sex" checked id="man">
+			<label for="man">男</label>
+						 <input type="radio" name="sex" id="woman">
+						<label for="woman">女 </label>
+			</p>
+			<!--value值会提交给数据库-->
+			<p>用户爱好：<input type="checkbox" name="obj[]"  value="eat" checked id="e">
+			<label for="e">吃</label>
+							<input type="checkbox" name="obj[]" value="drick" id="d">
+							<label for="d">喝</label>
+							<input type="checkbox" name="obj[]" value="play" id="p">
+							<label for="p">玩</label>
+							<input type="checkbox" name="obj[]" value="joy" id="j">
+							<label for="j">乐</label>
+			</p>
+			<p>用户头像：<input type="file"  enctype="form-data"></p>
+			<p>介绍信息：<textarea name="text" id="" cols="20" rows="4"></textarea></p>
+			<p>工作城市：
+				<select name="" id="" size="1" multiple>
+					<option value="">北京</option>
+					<option value="" selected>上海</option>
+					<option value="">广州</option>
+					<option value="">深圳</option>
+				</select>
+			</p>
+			<input type="submit" value="登录">
+			<input type="reset" value="重置">
+			<input type="button" onclick="sayHello()" value="普通按钮">
+			
+		
+		</form>
+	</body>
+</html>
